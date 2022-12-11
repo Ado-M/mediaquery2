@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 400px;
+
+}
+.crew{
+    width: 60%;
+
+}
+.we-are{
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    width: 50%;
+    float: right;
+    box-sizing: border-box
+
+}
+.imges{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.imges img {
+    position: relative;
+    margin-top: 100px;
+    padding: 20px;
+}
+.imges .b-img {
+    padding-top: 100px;
+}
+.under-b-img{
+    position: relative;
+    bottom: 20px;
+    left: 25px;
+}
+.imges .t-img{
+    padding-bottom: 100px;
+} 
+.under-t-img{
+position: relative;
+bottom: 100px;
+left: 30px;
+}
+ 
+
+
+
+@media (max-width: 700px) {
+
+    .container{
+        width: 90%;
+        margin: 20px 10px 20px 40px;
+    }
+
+.we-are{
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    width: 90%;
+    float: none;
+}
+.t-img,.b-img{
+    width: 100%;
+}
+
+}
+@media (min-width: 600px) {
+    .container{
+        width: 100%;
+        margin: 20px 10px 20px 40px;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        min-height: 400px;
+    }
+    .crew,
+    .we-are{
+        width: 1%;
+        height: 100px;
+        position: absolute;
+        right: 90px;
+    }
+    }
+    .container{
+            width: 90%;
+            margin: 20px 10px 20px 40px;
+    }
+    .crew,.we-are{
+        width: 90%;
+        float: none;
+    }
